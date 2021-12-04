@@ -1,5 +1,3 @@
-
-
 pragma solidity ^0.6.12;
 
 // SPDX-License-Identifier: MIT
@@ -1643,7 +1641,7 @@ contract Parrotly is ERC20, Ownable {
         totalFees = QUICKRewardsFee.add(liquidityFee).add(marketingFee).add(devFee);
     }
 
-    function setLiquiditFee(uint256 value) external onlyOwner{
+    function setLiquidityFee(uint256 value) external onlyOwner{
         liquidityFee = value;
         totalFees = QUICKRewardsFee.add(liquidityFee).add(marketingFee).add(devFee);
     }
